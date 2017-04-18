@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<hmtl ng-app = 'app'>
+  <div ng-controller='saved' class='container'>
+    <head>
+      <meta charset="utf-8" />
+      <title>Static</title>
+      <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+      <!-- <nav ng-repeat='page in page.links'> 
+        <button class='load' ng-click='loadPage(page)'>Load Page</button>
+      </nav> -->
+    </head>
+    <body class="hero-unit">
+    <script src="app/app.js"></script>
+    <script src="app/saver.js"></script>
+    </body>
+  </div>
+</html>
