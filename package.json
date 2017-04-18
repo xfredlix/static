@@ -1,0 +1,22 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "description": "A motivational app",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xfredlix/static.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Fred Li & Daniel Chang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xfredlix/static/issues"
+  },
+  "homepage": "https://github.com/xfredlix/static#readme"
+}
