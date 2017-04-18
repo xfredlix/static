@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/xfredlix/static#readme",
   "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
   }
 }
