@@ -1,11 +1,12 @@
 angular.module('app', [
-  'notepad'
+  'app.service'
   ])
 
 .controller('notePadController', function ($scope, notePad) {
   $scope.notes = [];
   $scope.saveNotes = notes => {
     $scope.notes.push(notes);
+    console.log(notes)
   } 
   // page = $scope.page;
   // saver.loadPages().then( function(response) {
