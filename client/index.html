@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<hmtl ng-app = 'app'>
+  <div ng-controller='notePad' class='container'>
+    <head>
+      <meta charset="utf-8" />
+      <title>Static</title>
+      <!-- <link rel="stylesheet" type="text/css" href="styles/styles.css" /> -->
+    </head>
+    <body class="hero-unit">
+      <div class='notePad'>
+        <nav ng-repeat='note in notes'> 
+          <div> {{note}} </div>
+        </nav>
+        <form ng-submit='saveNotes(note)'>
+        <input class="header" type="text" ng-model="note" placeholder="write here"> 
+      </form>
+      </div>
+    <script src="app.js"></script>
+    <script src="notePad.js"></script>
+    </body>
+  </div>
+</html>
