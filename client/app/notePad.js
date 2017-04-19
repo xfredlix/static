@@ -1,4 +1,4 @@
-angular.module('notepad', [])
+angular.module('app.service', [])
 
 .factory('notePad', function($http) {
   // var savePage = function(page) {
@@ -29,4 +29,5 @@ angular.module('notepad', [])
   //   savePage: savePage,
   //   loadPages: loadPages
   // }
+  return {};
 });
