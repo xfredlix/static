@@ -13,9 +13,11 @@
     <body class="hero-unit">
       <div class='notePad'>
         <nav ng-repeat='note in notes'> 
+        <!-- if you want to write code on index.html, surround in {{}} kinda like jsx -->
           <div> {{note}} </div>
         </nav>
         {{note}}
+        <!-- look for ng-class properties such as submit and repeat in the docs -->
         <form ng-submit='saveNotes(note)'>
           <input class="header" type="text" ng-model="note" placeholder="write here"> 
         </form>
