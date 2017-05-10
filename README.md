@@ -1,2 +1,0 @@
-# static
-A motivational app
