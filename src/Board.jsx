@@ -1,17 +1,12 @@
 import React from 'react';
 
-class Board extends React.Component {
-  constructor() {
-    super();
-  }
+export default class Board extends React.Component {
 
   render() {
     return(
       <div>
-        <p>hello</p>
+        <h1>{this.props.boardTitle}</h1>
       </div>
     );
   }
 }
-
-export default Board;
