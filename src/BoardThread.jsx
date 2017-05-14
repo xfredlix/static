@@ -1,16 +1,22 @@
 import React from 'react';
 import Board from './Board.jsx';
+import BoardCreator from './BoardCreator.jsx';
 
 export default class BoardThread extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      boards: [
-        'board1',
-        'board2',
-      ]
+      boards: []
     };
+
+    this.addBoard = this.addBoard.bind(this);
+  }
+
+  addBoard(boardTitle) {
+    const newState = Object.assign({}, this.state);
+    newState.boards.push(boardTitle);
+    this.setState(newState);
   }
 
   renderBoards() {
@@ -25,6 +31,11 @@ export default class BoardThread extends React.Component {
     return(
       <div>
         {this.renderBoards()}
+
+        <BoardCreator
+          boards={this.state.boards}
+          addBoard={this.addBoard}
+          />
       </div>
     );
   }
