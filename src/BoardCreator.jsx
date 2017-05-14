@@ -13,8 +13,10 @@ export default class BoardCreator extends React.Component {
   }
 
   createBoard() {
-    this.props.addBoard(this.state.title);
-    this.setState({ title: '' });
+    if (this.state.title.length !== 0) {
+      this.props.addBoard(this.state.title);
+      this.setState({ title: '' });
+    }
   }
 
   boardTitleHandler(e) {
