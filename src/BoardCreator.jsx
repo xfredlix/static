@@ -15,7 +15,7 @@ export default class BoardCreator extends React.Component {
   createBoard() {
     if (this.state.title.length !== 0) {
       this.props.addBoard(this.state.title);
-      this.setState({ title: '' });
+      this.setState({title: ''});
     }
   }
 
@@ -27,6 +27,7 @@ export default class BoardCreator extends React.Component {
     return(
       <div>
         <h1>Create Board</h1>
+
         <input
           value={this.state.title}
           onChange={this.boardTitleHandler}

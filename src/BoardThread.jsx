@@ -7,7 +7,7 @@ export default class BoardThread extends React.Component {
     super();
 
     this.state = {
-      boards: []
+      boards: [],
     };
 
     this.addBoard = this.addBoard.bind(this);
@@ -32,10 +32,7 @@ export default class BoardThread extends React.Component {
       <div>
         {this.renderBoards()}
 
-        <BoardCreator
-          boards={this.state.boards}
-          addBoard={this.addBoard}
-          />
+        <BoardCreator addBoard={this.addBoard} />
       </div>
     );
   }
