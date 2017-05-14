@@ -6,9 +6,9 @@ export default class List extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div>
-
+        <h3>{this.props.listTitle}</h3>
       </div>
     );
   }

@@ -20,7 +20,7 @@ export default class BoardThread extends React.Component {
   }
 
   renderBoards() {
-    return(
+    return (
       this.state.boards.map((board, idx) => {
         return <Board key={idx} boardTitle={board} />;
       })
@@ -28,7 +28,7 @@ export default class BoardThread extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div>
         {this.renderBoards()}
 

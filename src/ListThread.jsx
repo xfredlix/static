@@ -1,5 +1,6 @@
 import React from 'react';
 import List from './List';
+import ListCreator from './ListCreator.jsx';
 
 export default class ListThread extends React.Component {
   constructor() {
@@ -19,7 +20,7 @@ export default class ListThread extends React.Component {
   }
 
   renderLists() {
-    return(
+    return (
       this.state.lists.map((list, idx) => {
         return <List key={idx} listTitle={list} />;
       })
@@ -27,11 +28,11 @@ export default class ListThread extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div>
         {this.renderLists()}
 
-        
+        <ListCreator addList={this.addList}/>
       </div>
     );
   }
