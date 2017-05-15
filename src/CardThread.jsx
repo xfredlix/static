@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card.jsx';
-import CardCreator from 'CardCreator.jsx';
+import CardCreator from './CardCreator.jsx';
 
 export default class CardThread extends React.Component {
   constructor() {
@@ -13,16 +13,16 @@ export default class CardThread extends React.Component {
     this.addCard = this.addCard.bind(this);
   }
 
-  addCard(cardTitle) {
+  addCard(card) {
     const newState = Object.assign({}, this.state);
-    newState.cards.push(cardTitle);
+    newState.cards.push(card);
     this.setState(newState);
   }
 
   renderCards() {
     return (
       this.state.cards.map((card, idx) => {
-        return <Card key={idx} cardTitle={card} />;
+        return <Card key={idx} title={card.title} body={card.body} />;
       })
     );
   }

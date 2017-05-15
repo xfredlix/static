@@ -2,10 +2,6 @@ import React from 'react';
 import CardThread from './CardThread.jsx';
 
 export default class List extends React.Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div>
