@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import BoardThread from './BoardThread.jsx';
 import ListThread from './ListThread.jsx';
 
 class App extends Component {
