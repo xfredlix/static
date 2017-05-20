@@ -4,9 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-/*div {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  border: 1px solid black;
-}*/
+.list-container {
+  margin: 0 25%;
+}

@@ -29,7 +29,7 @@ export default class ListThread extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="panel panel-default list-container">
         {this.renderLists()}
 
         <ListCreator addList={this.addList}/>
