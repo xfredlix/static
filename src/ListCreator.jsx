@@ -17,7 +17,7 @@ export default class ListCreator extends React.Component {
   }
 
   createList() {
-    if (this.state.title.length !== 0) {
+    if (this.state.title.length) {
       this.props.addList(this.state.title);
       this.setState({title: ''});
     }
