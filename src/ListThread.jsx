@@ -27,7 +27,8 @@ export default class ListThread extends React.Component {
 
   changeCard(card) {
     this.setState({
-      changeList: true
+      changeList: true,
+      cardToBeChanged: card
     })
   }
 
