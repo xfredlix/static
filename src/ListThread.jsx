@@ -11,6 +11,7 @@ export default class ListThread extends React.Component {
     };
 
     this.addList = this.addList.bind(this);
+    this.changeCard = this.changeCard.bind(this);
   }
 
   addList(listTitle) {
@@ -21,6 +22,7 @@ export default class ListThread extends React.Component {
 
   addToList(index) {
     const newState = Object.assign({}, this.state);
+    console.log(newState.lists[index], index)
     newState.lists[index].push(this.state.cardToBeChanged);
     this.setState(newState);
   }
@@ -30,13 +32,14 @@ export default class ListThread extends React.Component {
       changeList: true,
       cardToBeChanged: card
     })
+    console.log(card)
   }
 
   renderLists() {
     return (
       this.state.lists.map((list, idx) => {
-        return (<div> 
-          <List key={idx} listTitle={list} />
+        return (<div key={idx}> 
+          <List listTitle={list} changeCard={this.changeCard} />
           {this.renderSelectList(idx)}
           </div>
         )

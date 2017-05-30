@@ -22,7 +22,7 @@ export default class CardThread extends React.Component {
   renderCards() {
     return (
       this.state.cards.map((card, idx) => {
-        return <Card key={idx} title={card.title} body={card.body} />;
+        return <Card key={idx} title={card.title} body={card.body} changeCard={this.props.changeCard}/>;
       })
     );
   }
